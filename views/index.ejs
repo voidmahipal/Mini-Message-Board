@@ -12,6 +12,7 @@
                 <h2><%=messages[i].user%></h2>
                 <p><%=messages[i].text%></p>
                 <p>Date added :<%=messages[i].added%> </p>
+                <a href="/details/<%= messages[i].id %>">View details</a>
             </li>
         <% } %>
     </ul>

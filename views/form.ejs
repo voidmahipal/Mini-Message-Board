@@ -9,9 +9,11 @@
     <form action="/new" method="post" >
         <h1>Add a new Message</h1>
         <label for="authorName">Name: </label>
-        <input type="text" name="user" id="authorName">
+        <input type="text" name="user" id="authorName" required>
         <label for="mssg">Message: </label>
-        <input type="text" name="text" id="mssg">
+        <input type="text" name="text" id="mssg"required>
+        <label for="details">Details:</label>
+        <input type="text" name="details" id="details" required>
         <button type="submit">Submit</button>
     </form>
 </body>
