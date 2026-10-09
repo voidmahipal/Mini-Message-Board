@@ -1,14 +1,12 @@
-import { messages } from "../models/messages.js";
+import { insertMessages } from "../db/queries.js";
 
-let mId = 3;
 function getNewForm(req,res) {
     res.render("form");
 }
-
-function postNewForm(req,res) {
+const added = new Date();
+async function postNewForm(req,res) {
     const {user,text,details} = req.body;
-    messages.push({user:user,text:text,added:new Date(),id:mId,details:details});
-    mId++;
+    await insertMessages({user,text,added,details});
     res.redirect("/");
 }
 

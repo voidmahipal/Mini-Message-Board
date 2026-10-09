@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/voidmahipal/Mini-Message-Board#readme",
   "dependencies": {
+    "dotenv": "^18.0.7",
     "ejs": "^7.0.1",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "pg": "^8.23.1"
   }
 }
